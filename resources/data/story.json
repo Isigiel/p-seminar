@@ -2,12 +2,14 @@
   "start":[0],
   "nodes":[
     {
+      "id":1,
       "title": "Fund der Leiche",
       "gps":"",
       "unlocks":[1],
       "wiki":[]
     },
     {
+      "id":2,
       "title": "Sepps Wohnung",
       "gps":"",
       "unlocks":[2],
@@ -27,6 +29,7 @@
       ]
     },
     {
+      "id":3,
       "title": "Annas Wohnung",
       "gps":"",
       "unlocks":[3,4],
@@ -50,6 +53,7 @@
       ]
     },
     {
+      "id":4,
       "title":"Sennerin Evi",
       "gps":"",
       "unlocks":[5],
@@ -78,6 +82,7 @@
       ]
     },
     {
+      "id":6,
       "title":"Annas Vater Hiasl",
       "gps":"",
       "unlocks":[7],
@@ -85,6 +90,7 @@
       "wiki":[]
     },
     {
+      "id":7,
       "title":"Evis Vater Alois",
       "gps":"",
       "unlocks":[6],
@@ -103,12 +109,14 @@
       ]
     },
     {
+      "id":8,
       "title":"Johannes",
       "gps":"",
       "unlocks":[6],
       "wiki":[]
     },
     {
+      "id":9,
       "title":"Pfarrer Krottenkopf",
       "gps":"",
       "unlocks":[7],
