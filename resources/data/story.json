@@ -1,0 +1,312 @@
+{
+  "start":[0],
+  "nodes":[
+    {
+      "title": "Fund der Leiche",
+      "gps":"",
+      "unlocks":[1],
+      "wiki":[]
+    },
+    {
+      "title": "Sepps Wohnung",
+      "gps":"",
+      "unlocks":[2],
+      "wiki":[
+        {
+          "title": "Müller-Hof",
+          "picture":"",
+          "text":""
+        },
+        {
+          "title":"Wohnen um 1900",
+          "picture":"",
+          "text":""
+
+        }
+
+      ]
+    },
+    {
+      "title": "Annas Wohnung",
+      "gps":"",
+      "unlocks":[3,4],
+      "talk": 1,
+      "wiki":[
+        {
+          "title": "Fischerweber",
+          "picture":"",
+          "text":"Landkreis: Miesbach Gemeinde: Rottach-Egern Erbauungsjahr: 1729 Gebäudeart: Bauernhof Erbaut: 1729, Anbau Stüber, Vorbau und Verbreiterung 1789 Präsentationszeiten: 1930er Jahre; 1960er Jahre Wirtschaftliche Grundlagen: breitgefächerte Einkommensquellen, bestehend aus Landwirtschaft, Weberei, Schnapsbrennerei, seit Ende des 19.Jh. auch Zimmervermietung an 'Sommerfrischler' Die originale Innenausstattung ist nahezu vollständig erhalten. Seit den 1880er Jahren fanden Umbauten und Modernisierungen im Zusammenhang mit dem Fremdenverkehr statt. 1911 erfolgte der Ausbau zum Feriendomizil."
+        },
+        {
+          "title":"Tourismus",
+          "picture":"",
+          "text":""
+        },
+        {
+          "title":"Schnapsbrennen",
+          "picture":"",
+          "text":""
+        }
+      ]
+    },
+    {
+      "title":"Sennerin Evi",
+      "gps":"",
+      "unlocks":[5],
+      "talk": 2,
+      "wiki":[
+        {
+          "title":"Alm A5",
+          "picture":"",
+          "text":"Landkreis: Traunstein Gemeinde: Schleching Erbauungsjahr: 1824 Gebäudeart: Alm Präsentationszeit: um 1970 Der Kaser gehörte zum Weberbauerhof in Schleching. In einem Versteck im Weberbauerkaser wurde Wilderermunition gefunden. Thema: 'Wildschützen' - Wilderei in den Bergen."
+        },
+        {
+          "title":"Räterepublik",
+          "pictures":"",
+          "text":""
+        },
+        {
+          "title":"Freikorps Werdenfels",
+          "pictures":"",
+          "text":""
+        },
+        {
+          "title":"Almwirtschaft",
+          "pictures":"",
+          "text":""
+        }
+      ]
+    },
+    {
+      "title":"Annas Vater Hiasl",
+      "gps":"",
+      "unlocks":[7],
+      "talk": 3,
+      "wiki":[]
+    },
+    {
+      "title":"Evis Vater Alois",
+      "gps":"",
+      "unlocks":[6],
+      "talk": 0,
+      "wiki":[
+        {
+          "title":"Zollingerhalle T11",
+          "pictures":"",
+          "text":""
+        },
+        {
+          "title":"Tourismus",
+          "pictures":"",
+          "text":""
+        }
+      ]
+    },
+    {
+      "title":"Johannes",
+      "gps":"",
+      "unlocks":[6],
+      "wiki":[]
+    },
+    {
+      "title":"Pfarrer Krottenkopf",
+      "gps":"",
+      "unlocks":[7],
+      "talk": 4,
+      "wiki":[
+        {
+          "title":"Kapelle S1",
+          "pictures":"",
+          "text":""
+        }
+      ]
+    }
+  ],
+  "talks":[
+    {
+      "title": "Befragung von Alois",
+      "start":[
+        "Hallo, ich bin Alois."
+      ],
+      "questions":[
+        {
+          "text": "Kamen Sie mit Sepp gut zurecht oder eher nicht?",
+          "answers": [
+            "Ursprünglich war er ein guter Geselle, wie ich fand.",
+            "Aber als ich bei einem Abend mit Selbstgebranntem herausfand, was er getan hatte, hasste ich ihn.",
+            "Die Räterepublik war eine der besten Dinge, die vorherrschten.",
+            "Doch was musste er tun...?",
+            "Mit seinem Freikorps und den anderen „Weißen“, wie diesem sogenannten „Freund“ Johannes musste er in München einmarschieren und die Räterepublik stürzen.",
+            "Als einer von den „Roten“ konnte ich dies natürlich nicht unterstützen und damit war er für mich gestorben…natürlich bildlich gesehen."
+          ],
+          "correct": true
+        },
+        {
+          "text": "Wie wir hörten hatten Sie ein Problem mit Sepp. Endete dieses Problem tödlich für ihn?",
+          "answers": [
+            "Wollen sie mir jetzt unterstellen, dass ich den Sepp umgebracht habe?!",
+            "Ich mochte ihn nicht sonderlich aber an diesem Taugenichts mache ich mir meine Finger doch nicht schmutzig."
+          ],
+          "correct": false
+        },
+        {
+          "text": "Sepp hatte offenbar ein Verhältnis zu ihrer Tochter. Was halten sie davon?",
+          "answers":[
+            "Meine Tochter ist alt genug.",
+            "Sie kann selbst entscheiden was oder wen sie will.",
+            "Wenn es nach mir ginge hätte ich nicht gerade einen „Weißen“ als Liebhaber gewählt.",
+            "Wussten sie, dass Sepp mit seinem sogenannten „Freund“ Johannes und dem Rest des Freikorps in München einmarschiert ist und die Räterepublik gestürzt hat?",
+            "Ich habe es erst an einem Abend mit Selbstgebranntem erfahren.",
+            "Diese verdammten „Weißen“ Gegenrevolutionäre. Die Räterepublik war das einzig Wahre.",
+            "Gut, dass Sepp dafür büßen musste, was er getan hat."
+          ],
+          "correct": true
+        }
+      ]
+    },
+    {
+      "title": "Befragung von Anna",
+      "start":[
+        "Hallo, ich bin Anna"
+      ],
+      "questions":[
+        {
+          "text": "Ich habe gehört sie führten eine Beziehung mit dem Verstorbenen, wie lange waren sie mit ihm zusammen?",
+          "answers": [
+            "Seit 3 Jahren, er hat bei mir gewohnt und beim Dorffest haben wir uns näher kennengelernt und verliebt.",
+            "Audiodatei zum Dorffest?"
+          ],
+          "correct": true
+        },
+        {
+          "text": "Wie ich sehe sind Sie schwanger, wäre der Verstorbene der Vater gewesen?",
+          "answers":[
+            "Ja natürlich! Was denken sie denn?! Ich habe ihn niemals betrogen!"
+          ],
+          "correct": false
+        },
+        {
+          "text": "Gibt es Dorfbewohner denen Sie den Mord zutrauen?",
+          "answers": [
+            "Mir fällt niemand ein der ihn hasste, außer vielleicht der Pfarrer Krottenkopf.",
+            "Er hat sich sonst mit allen gut verstanden, mit der Sennerin Evi leider zu gut.",
+            "Es ist mir zwar unangenehm, aber er hatte ein Verhältniss mit ihr.Vielleicht sollten Sie sie mal befragen."
+          ],
+          "correct": true
+        }
+      ]
+    },
+    {
+      "title": "Befragung von Evi",
+      "start":[
+        "Hallo, ich bin Evi die Sennerin"
+      ],
+      "questions":[
+        {
+          "text": "Wie ich erfahren habe, hatten sie eine Affäre mit Sepp??",
+          "answers": [
+            "Wie können sie mich nur so dreist als leichtes Madl darstellen?!"
+          ],
+          "correct": false
+        },
+        {
+          "text": "Entschuldigen sie, aber es geht immerhin um die Aufklärung eines Todesfalls. Also lassen sie uns bitte weiter machen. In welchem Verhältnis standen sie zum Mordopfer?",
+          "answers": [
+            "Ich bereue meine Taten glauben sie mir bitte…",
+            "…ich…ich hatte eine Affäre mit ihm.",
+            "Er kam immer in meine Hütte hinauf, um seine Waffe für die Jagd abzuholen und hat dann immer noch eine Tasse Tee mit mir getrunken",
+            "Nach und nach kamen wir uns immer näher und da passierte es einfach.",
+            "Ich bereue wirklich was ich getan habe vor allem auch da mein Vater davon erfahren hat.",
+            "Da er sowieso, nachdem was er über Sepps Vergangenheit erfahren hat, ein Problem mit ihm hatte."
+          ],
+          "correct": true
+        },
+        {
+          "text": "Okay. Hatten Sie regelmäßig Kontakt zu Sepp?",
+          "answers": [
+            "Ja, Sepp kam immer zu mir auf die Alm hoch, um sein Gewehr für die Jagd abzuholen.",
+            "Naja…ich bin nicht stolz darauf aber Sepp und ich standen uns sehr nahe…wenn sie verstehen…sehr, sehr nahe.",
+            "Wir hatten ein Verhältnis, nichts Besonderes.",
+            "Aber erst vorgestern kam mein Vater zu mir, um mir den Kontakt zu Sepp zu verbieten.",
+            "Er hatte irgendetwas über Sepps Vergangenheit erfahren, was ihm überhaupt nicht gefiel.",
+            "Vielleicht sollten sie ihn befragen…"
+          ],
+          "correct": true
+        }
+      ]
+    },
+    {
+      "title": "Befragung von Matthias",
+      "start":[
+        "Hallo, ich bin Matthias"
+      ],
+      "questions":[
+        {
+          "text": "Wie war Ihr Verhältnis zum Verstorbenen?",
+          "answers": [
+            "Er war der Freund meiner Tochter Anna",
+            "Ich mochte ihn nicht sonderlich. Aber da war ich nicht der einzige.",
+            "Pfarrer Krottenkopf hatte ein großes Problem mit ihm, da Sepp ein so unchristliches Leben geführt hat."
+          ],
+          "correct": true
+        },
+        {
+          "text": "Denken Sie die Beziehung zwischen ihrer Tochter und Sepp war glücklich?",
+          "answers": [
+            "Er hat sie doch nur ausgenutzt!",
+            "Und jetzt ist sie auch noch schwanger von ihm.",
+            "Heiraten wollte er sie auch nicht, da er mit unserem Pfarrer nicht gut ausgekommen ist.",
+            "Pfarrer Krottenkopf und ich haben letzte Woche im Dorf Wirt über Sepp gesprochen.",
+            "Er ist auch der Meinung, dass Sepp ein Mann ist, der unser Dorf nur ins Unheil führt."
+          ],
+          "correct": true
+        },
+        {
+          "text":"Wo waren Sie am Abend des Mordes und was haben Sie getan?",
+          "answers":[
+            "Sie wollen damit doch wohl nicht etwa andeuten, dass ich der Mörder von diesem Taugenichts sein soll?!"
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "title":"Befragung Pfarrer Krottenkopf",
+      "start":[
+        "Hallo, ich bin Pfarrer Krottenkopf."
+      ],
+      "questions":[
+        {
+          "text": "Wie ich erfahren habe, hatten Sie einige Probleme mit Sepp??",
+          "answers": [
+            "Sagen wir es so, Sepp war ein guter Zeitgenosse, mit den christlichen Tugenden nahm er es jedoch nicht so genau.",
+            "Es gab einige Gerüchte über Sepps diverse Affären und das obwohl er mit Anna zusammen war.",
+            "Deshalb hatte Annas Vater auch so eine Wut auf ihn, dadurch das Anna jetzt ein uneheliches Kind bekommt",
+            "Desshalb war ihr Vater natürlich noch schlechter auf ihn zu sprechen gewesen"
+          ],
+          "correct": true
+        },
+        {
+          "text": "Glauben Sie Sepp hatte einen schlechten Einfluss auf Anna?",
+          "anwers": [
+            "Seit sie mit ihm zusammen war, ging sie nur noch unregelmäßig in den Gottesdienst.",
+            "Und das obwohl sie eigentlich eine sehr fromme und liebenswürdige junge Frau war.",
+            "Zudem wollte er sie nicht heiraten, angeblich da wir nicht gut miteinander auskommen.",
+            "Ich glaube jedoch, dass er seine freie, rücksichtlose Lebensweise nicht aufgeben wollte...",
+            "Doch die arme Anna hat ihm Glauben geschenkt."
+          ],
+          "correct": true
+        },
+        {
+          "text": "Hat in den vergangenen Wochen jemand etwas gebeichtet, das etwas mit Sepps Tod zu tun haben könnte?",
+          "answer": [
+            "Ich bitte Sie als Pfarrer muss ich mich an das Beichtgeheimnis halten, Mord hin oder her!",
+            "Bei einer Beichte geht schließlich nicht darum Beweise gegen jemanden zu sammeln, sondern dass man sein Gewissen erleichtern kann.",
+            "Sonst würde ja keiner mehr beichten."
+          ],
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
