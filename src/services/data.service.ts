@@ -5,17 +5,24 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import { Story } from '../model/story';
 import { WikiEntry } from '../model/wikiEntry';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Place } from '../model/place';
 /**
  * Created by hedde on 18/05/2017.
  */
 
 @Injectable()
 export class DataService {
+
+  private $places: BehaviorSubject<Place[]>;
+  private $wiki: BehaviorSubject<WikiEntry[]>;
   private story: Story;
-  private progress: {unlocked: number[]; finished: number[]; wiki: WikiEntry[]};
+  private progress: { unlocked: number[]; finished: number[]; wiki: WikiEntry[] };
   private loaded: Promise<any>;
 
   constructor(private storage: Storage, private http: Http) {
+    this.$places = new BehaviorSubject([]);
+    this.$wiki = new BehaviorSubject([]);
     this.loaded = new Promise(resolve => {
       this.storage.get('story').then(data => {
         if (data == null) {
@@ -37,18 +44,28 @@ export class DataService {
               wiki: []
             };
           }
+          this.$places.next(this.progress.unlocked.map(place => this.story.nodes[place]));
+          this.$wiki.next(this.progress.wiki);
           resolve();
         });
       });
     });
   }
 
-  get places(){
-    return new Promise(resolve => {
-      this.loaded.then(()=>{
-        const places = this.progress.unlocked.map(place => this.story.nodes[place]);
-        resolve(places);
-      });
-    });
+  get places() {
+    return this.$places;
+  }
+
+  get wiki() {
+    return this.$wiki;
+  }
+
+  visit(id: number) {
+    const placeIndex = this.story.nodes.findIndex(place => place.id == id);
+    this.progress.unlocked.push(...this.story.nodes[placeIndex].unlocks);
+    this.$places.next(this.progress.unlocked.map(place => this.story.nodes[place]));
+    this.progress.wiki.push(...this.story.nodes[placeIndex].wiki);
+    this.$wiki.next(this.progress.wiki);
+    this.storage.set('progress', JSON.stringify(this.progress));
   }
 }

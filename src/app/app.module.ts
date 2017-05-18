@@ -1,6 +1,6 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { ContactPage } from '../pages/contact/contact';
@@ -8,11 +8,14 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Geolocation } from '@ionic-native/geolocation';
 import { IonicStorageModule } from '@ionic/storage';
 import { StoryPage } from '../pages/story/story';
 import { WikiPage } from '../pages/wiki/wiki';
 import { DataService } from '../services/data.service';
 import { HttpModule } from '@angular/http';
+import { PlaceComponent } from '../components/place/place';
+import { EntryComponent } from '../components/entry/entry';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import { HttpModule } from '@angular/http';
     StoryPage,
     TabsPage,
     WikiPage,
+    PlaceComponent,
+    EntryComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,11 +39,14 @@ import { HttpModule } from '@angular/http';
     ContactPage,
     StoryPage,
     TabsPage,
-    WikiPage
+    WikiPage,
+    PlaceComponent,
+    EntryComponent,
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataService
   ]

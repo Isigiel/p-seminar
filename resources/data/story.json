@@ -112,14 +112,14 @@
       "id":8,
       "title":"Johannes",
       "gps":"",
-      "unlocks":[6],
+      "unlocks":[],
       "wiki":[]
     },
     {
       "id":9,
       "title":"Pfarrer Krottenkopf",
       "gps":"",
-      "unlocks":[7],
+      "unlocks":[],
       "talk": 4,
       "wiki":[
         {

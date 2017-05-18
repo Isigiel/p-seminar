@@ -1,14 +1,23 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+  public lat: number;
+  public long: number;
+  public time: number;
+  public accuracy: number;
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(private geo: Geolocation) {
+    geo.watchPosition().subscribe(location => {
+      this.time = location.timestamp;
+      this.long = location.coords.longitude;
+      this.lat = location.coords.latitude;
+      this.accuracy = location.coords.accuracy;
+    });
   }
 
 }
