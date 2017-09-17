@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
-import { DataService } from '../../services/data.service';
-import { Observable } from 'rxjs/Observable';
-import { Place } from '../../model/place';
-import { PlaceComponent } from '../../components/place/place';
+import {Component} from '@angular/core';
+import {ModalController} from 'ionic-angular';
+import {DataService} from '../../services/data.service';
+import {Observable} from 'rxjs/Observable';
+import {Place} from '../../model/place';
+import {PlaceComponent} from '../../components/place/place';
 
 /**
  * Generated class for the StoryPage page.
@@ -12,7 +12,7 @@ import { PlaceComponent } from '../../components/place/place';
  * on Ionic pages and navigation.
  */
 @Component({
-  selector: 'page-story',
+  selector:    'page-story',
   templateUrl: 'story.html',
 })
 export class StoryPage {
@@ -25,7 +25,9 @@ export class StoryPage {
 
   visitPlace(place) {
     const placeModal = this.modalCtrl.create(PlaceComponent, {place});
-    placeModal.present().then((placeVisited => {
+    placeModal.present();
+    placeModal.onDidDismiss((placeVisited => {
+      console.log(placeVisited);
       if (placeVisited) {
         this.data.visit(place.id);
       }

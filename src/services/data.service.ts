@@ -1,12 +1,13 @@
-import { Injectable } from '@angular/core';
-import { Storage } from '@ionic/storage';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import {Injectable} from '@angular/core';
+import {Http} from '@angular/http';
+import {Storage} from '@ionic/storage';
 import 'rxjs/add/operator/do';
-import { Story } from '../model/story';
-import { WikiEntry } from '../model/wikiEntry';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Place } from '../model/place';
+import 'rxjs/add/operator/map';
+import {BehaviorSubject} from 'rxjs/BehaviorSubject';
+import {Place} from '../model/place';
+import {Story} from '../model/story';
+import {WikiEntry} from '../model/wikiEntry';
+
 /**
  * Created by hedde on 18/05/2017.
  */
@@ -26,7 +27,7 @@ export class DataService {
     this.loaded = new Promise(resolve => {
       this.storage.get('story').then(data => {
         if (data == null) {
-          this.http.get('https://raw.githubusercontent.com/Isigiel/p-seminar/master/resources/data/story.json').map(
+          this.http.get('/assets/data/story.json').map(
             res => res.json()).subscribe(data => {
             this.storage.set('story', JSON.stringify(data));
             this.story = data;
@@ -62,9 +63,22 @@ export class DataService {
 
   visit(id: number) {
     const placeIndex = this.story.nodes.findIndex(place => place.id == id);
-    this.progress.unlocked.push(...this.story.nodes[placeIndex].unlocks);
+    this.progress.unlocked.push(...this.story.nodes[placeIndex].unlocks
+      .filter(id => !this.progress.unlocked.includes(id))
+    );
     this.$places.next(this.progress.unlocked.map(place => this.story.nodes[place]));
     this.progress.wiki.push(...this.story.nodes[placeIndex].wiki);
+    this.$wiki.next(this.progress.wiki);
+    this.storage.set('progress', JSON.stringify(this.progress));
+  }
+
+  reset() {
+    this.progress = {
+      unlocked: [0],
+      finished: [],
+      wiki:     [],
+    };
+    this.$places.next(this.progress.unlocked.map(place => this.story.nodes[place]));
     this.$wiki.next(this.progress.wiki);
     this.storage.set('progress', JSON.stringify(this.progress));
   }

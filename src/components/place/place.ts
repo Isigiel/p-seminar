@@ -21,7 +21,7 @@ export class PlaceComponent {
   }
 
   dismiss() {
-    this.viewCtrl.dismiss(false);
+    this.viewCtrl.dismiss();
   }
 
   visitPlace() {

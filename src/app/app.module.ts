@@ -16,6 +16,7 @@ import { DataService } from '../services/data.service';
 import { HttpModule } from '@angular/http';
 import { PlaceComponent } from '../components/place/place';
 import { EntryComponent } from '../components/entry/entry';
+import {Geofence} from '@ionic-native/geofence';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { EntryComponent } from '../components/entry/entry';
     StatusBar,
     SplashScreen,
     Geolocation,
+    Geofence,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataService
   ]

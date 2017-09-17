@@ -4,14 +4,20 @@
     {
       "id":1,
       "title": "Fund der Leiche",
-      "gps":"",
+      "gps": {
+        "lat": 40.7496662,
+        "long": -74.0032591
+      },
       "unlocks":[1],
       "wiki":[]
     },
     {
       "id":2,
       "title": "Sepps Wohnung",
-      "gps":"",
+      "gps": {
+        "lat": 40.749222,
+        "long": -74.003812
+      },
       "unlocks":[2],
       "wiki":[
         {
@@ -31,7 +37,10 @@
     {
       "id":3,
       "title": "Annas Wohnung",
-      "gps":"",
+      "gps": {
+        "lat": 40.749222,
+        "long": -74.003812
+      },
       "unlocks":[3,4],
       "talk": 1,
       "wiki":[
@@ -55,7 +64,10 @@
     {
       "id":4,
       "title":"Sennerin Evi",
-      "gps":"",
+      "gps": {
+        "lat": 40.749222,
+        "long": -74.003812
+      },
       "unlocks":[5],
       "talk": 2,
       "wiki":[
@@ -84,7 +96,10 @@
     {
       "id":6,
       "title":"Annas Vater Hiasl",
-      "gps":"",
+      "gps": {
+        "lat": 40.749222,
+        "long": -74.003812
+      },
       "unlocks":[7],
       "talk": 3,
       "wiki":[]
@@ -92,7 +107,10 @@
     {
       "id":7,
       "title":"Evis Vater Alois",
-      "gps":"",
+      "gps": {
+        "lat": 40.749222,
+        "long": -74.003812
+      },
       "unlocks":[6],
       "talk": 0,
       "wiki":[
@@ -111,14 +129,20 @@
     {
       "id":8,
       "title":"Johannes",
-      "gps":"",
+      "gps": {
+        "lat": 40.749222,
+        "long": -74.003812
+      },
       "unlocks":[],
       "wiki":[]
     },
     {
       "id":9,
       "title":"Pfarrer Krottenkopf",
-      "gps":"",
+      "gps": {
+        "lat": 40.749222,
+        "long": -74.003812
+      },
       "unlocks":[],
       "talk": 4,
       "wiki":[
