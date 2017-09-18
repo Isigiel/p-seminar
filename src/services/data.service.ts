@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
+import {Geofence} from '@ionic-native/geofence';
 import {Storage} from '@ionic/storage';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/map';
@@ -16,24 +17,28 @@ import {WikiEntry} from '../model/wikiEntry';
 export class DataService {
 
   private $places: BehaviorSubject<Place[]>;
+  private $fences: BehaviorSubject<{ [id: number]: boolean }>;
   private $wiki: BehaviorSubject<WikiEntry[]>;
   private story: Story;
   private progress: { unlocked: number[]; finished: number[]; wiki: WikiEntry[] };
   private loaded: Promise<any>;
 
-  constructor(private storage: Storage, private http: Http) {
+  constructor(private storage: Storage, private http: Http, private geofence: Geofence) {
     this.$places = new BehaviorSubject([]);
     this.$wiki = new BehaviorSubject([]);
+    this.$fences = new BehaviorSubject({});
     this.loaded = new Promise(resolve => {
       this.storage.get('story').then(data => {
+        console.log('Got story data', data);
         if (data == null) {
-          this.http.get('/assets/data/story.json').map(
-            res => res.json()).subscribe(data => {
+          this.http.get('/assets/data/story.json')
+            .map(res => res.json())
+            .subscribe(data => {
             this.storage.set('story', JSON.stringify(data));
-            this.story = data;
           });
         } else {
           this.story = JSON.parse(data);
+          console.log('story data set', this.story);
         }
         this.storage.get('progress').then(data => {
           if (data != null) {
@@ -51,6 +56,21 @@ export class DataService {
         });
       });
     });
+    this.geofence.onTransitionReceived().subscribe(transitions => {
+      transitions.forEach(transition => {
+        if (transition.transitionType === 1) {
+          this.$fences.next({...this.$fences.getValue(), [transition.id]: true});
+        } else {
+          this.$fences.next({...this.$fences.getValue(), [transition.id]: false});
+        }
+      });
+    });
+    this.loaded.then(() => {
+      geofence.initialize().then(() => {
+        this.addFences();
+
+      }, err => console.error(err));
+    });
   }
 
   get places() {
@@ -59,6 +79,10 @@ export class DataService {
 
   get wiki() {
     return this.$wiki;
+  }
+
+  atPlace(id: number) {
+    return this.$fences.map(fences => fences[id]);
   }
 
   visit(id: number) {
@@ -81,5 +105,30 @@ export class DataService {
     this.$places.next(this.progress.unlocked.map(place => this.story.nodes[place]));
     this.$wiki.next(this.progress.wiki);
     this.storage.set('progress', JSON.stringify(this.progress));
+  }
+
+  private addFences() {
+    console.log(this);
+    const fences = this.story.nodes.map(place => {
+      return {
+        id:             place.id, //any unique ID
+        latitude:       place.gps.lat, //center of geofence radius
+        longitude:      place.gps.long,
+        radius:         50, //radius to edge of geofence in meters
+        transitionType: 3, //see 'Transition Types' below
+        /*notification:   { //notification settings
+          id:             1, //any unique ID
+          title:          'You crossed a fence', //notification title
+          text:           'You just arrived to Gliwice city center.', //notification body
+          openAppOnClick: true //open app when notification is tapped
+        },*/
+      };
+    });
+    const status = {};
+    fences.forEach(fence => {
+      status[fence.id] = false;
+    });
+    this.$fences.next(status);
+    this.geofence.addOrUpdate(fences).then(() => console.log('Added all fences'));
   }
 }

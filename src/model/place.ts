@@ -5,7 +5,7 @@ import { WikiEntry } from './wikiEntry';
 export interface Place {
   id: number;
   title: string;
-  gps: string;
+  gps: {lat: number, long: number};
   unlocks: number[];
   talk?: number;
   wiki: WikiEntry[];

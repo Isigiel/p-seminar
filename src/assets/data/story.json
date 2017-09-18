@@ -5,8 +5,8 @@
       "id":1,
       "title": "Fund der Leiche",
       "gps": {
-        "lat": 40.7496662,
-        "long": -74.0032591
+        "lat": 47.66631,
+        "long": 11.28692
       },
       "unlocks":[1],
       "wiki":[]
@@ -15,8 +15,8 @@
       "id":2,
       "title": "Sepps Wohnung",
       "gps": {
-        "lat": 40.749222,
-        "long": -74.003812
+        "lat": 4766555,
+        "long": 11.28459
       },
       "unlocks":[2],
       "wiki":[
@@ -38,8 +38,8 @@
       "id":3,
       "title": "Annas Wohnung",
       "gps": {
-        "lat": 40.749222,
-        "long": -74.003812
+        "lat": 47.66409,
+        "long": 11.28827
       },
       "unlocks":[3,4],
       "talk": 1,
@@ -65,8 +65,8 @@
       "id":4,
       "title":"Sennerin Evi",
       "gps": {
-        "lat": 40.749222,
-        "long": -74.003812
+        "lat": 47.66356,
+        "long": 11.28817
       },
       "unlocks":[5],
       "talk": 2,
@@ -97,8 +97,8 @@
       "id":6,
       "title":"Annas Vater Hiasl",
       "gps": {
-        "lat": 40.749222,
-        "long": -74.003812
+        "lat": 47.66603,
+        "long": 11.28676
       },
       "unlocks":[7],
       "talk": 3,
@@ -108,8 +108,8 @@
       "id":7,
       "title":"Evis Vater Alois",
       "gps": {
-        "lat": 40.749222,
-        "long": -74.003812
+        "lat": 47.66469,
+        "long": 11.28705
       },
       "unlocks":[6],
       "talk": 0,
