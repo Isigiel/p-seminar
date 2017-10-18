@@ -11,7 +11,9 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
-  {{entry.text}}
+  <img *ngIf="entry.picture" src="/assets/img/{{entry.picture}}.png" alt="">
+  <div style="white-space: pre-line;">
+    {{entry.text}}
+  </div>
 </ion-content>

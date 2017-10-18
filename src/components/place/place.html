@@ -14,5 +14,6 @@
 
 <ion-content padding>
   <button ion-button (click)="visitPlace()" [disabled]="!(atPlace | async)">Ort besuchen</button>
+  <button ion-button (click)="visitPlace()">Ort besuchen (dev)</button>
   <p *ngIf="!(atPlace | async)">Du musst zum Haus gehen um es zu besuchen, dann wird der Ort freigeschaltet.</p>
 </ion-content>

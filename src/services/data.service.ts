@@ -28,33 +28,26 @@ export class DataService {
     this.$wiki = new BehaviorSubject([]);
     this.$fences = new BehaviorSubject({});
     this.loaded = new Promise(resolve => {
-      this.storage.get('story').then(data => {
-        console.log('Got story data', data);
-        if (data == null) {
-          this.http.get('/assets/data/story.json')
-            .map(res => res.json())
-            .subscribe(data => {
-            this.storage.set('story', JSON.stringify(data));
-          });
-        } else {
-          this.story = JSON.parse(data);
+      this.http.get('/assets/data/story.json')
+        .map(res => res.json())
+        .subscribe(data => {
+          this.story = data;
           console.log('story data set', this.story);
-        }
-        this.storage.get('progress').then(data => {
-          if (data != null) {
-            this.progress = JSON.parse(data);
-          } else {
-            this.progress = {
-              unlocked: [0],
-              finished: [],
-              wiki: []
-            };
-          }
-          this.$places.next(this.progress.unlocked.map(place => this.story.nodes[place]));
-          this.$wiki.next(this.progress.wiki);
-          resolve();
+          this.storage.get('progress').then(data => {
+            if (data != null) {
+              this.progress = JSON.parse(data);
+            } else {
+              this.progress = {
+                unlocked: [0],
+                finished: [],
+                wiki:     [],
+              };
+            }
+            this.$places.next(this.progress.unlocked.map(place => this.story.nodes[place]));
+            this.$wiki.next(this.progress.wiki);
+            resolve();
+          });
         });
-      });
     });
     this.geofence.onTransitionReceived().subscribe(transitions => {
       transitions.forEach(transition => {

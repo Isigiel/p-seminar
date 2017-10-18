@@ -54,7 +54,7 @@
         {
           "title": "Fischerweber",
           "picture": "haus2",
-          "text": "Landkreis: Miesbach Gemeinde: Rottach-Egern Erbauungsjahr: 1729 Gebäudeart: Bauernhof Erbaut: 1729, Anbau Stüber, Vorbau und Verbreiterung 1789 Präsentationszeiten: 1930er Jahre; 1960er Jahre Wirtschaftliche Grundlagen: breitgefächerte Einkommensquellen, bestehend aus Landwirtschaft, Weberei, Schnapsbrennerei, seit Ende des 19.Jh. auch Zimmervermietung an 'Sommerfrischler' Die originale Innenausstattung ist nahezu vollständig erhalten. Seit den 1880er Jahren fanden Umbauten und Modernisierungen im Zusammenhang mit dem Fremdenverkehr statt. 1911 erfolgte der Ausbau zum Feriendomizil."
+          "text": "Landkreis: Miesbach\nGemeinde: Rottach-Egern\nErbauungsjahr: 1729\nGebäudeart: Bauernhof\nErbaut: 1729, Anbau Stüber, Vorbau und Verbreiterung 1789\nPräsentationszeiten: 1930er Jahre; 1960er Jahre\nWirtschaftliche Grundlagen: breitgefächerte Einkommensquellen, bestehend aus Landwirtschaft, Weberei, Schnapsbrennerei, seit Ende des 19.Jh. auch Zimmervermietung an \\'Sommerfrischler\\' Die originale Innenausstattung ist nahezu vollständig erhalten. Seit den 1880er Jahren fanden Umbauten und Modernisierungen im Zusammenhang mit dem Fremdenverkehr statt. 1911 erfolgte der Ausbau zum Feriendomizil."
         },
         {
           "title": "Tourismus",
@@ -87,17 +87,17 @@
         },
         {
           "title": "Räterepublik",
-          "pictures": "",
+          "picture": "",
           "text": ""
         },
         {
           "title": "Freikorps Werdenfels",
-          "pictures": "",
+          "picture": "",
           "text": ""
         },
         {
           "title": "Almwirtschaft",
-          "pictures": "wiki1",
+          "picture": "wiki1",
           "text": ""
         }
       ]
@@ -129,12 +129,12 @@
       "wiki": [
         {
           "title": "Zollingerhalle T11",
-          "pictures": "haus4",
+          "picture": "haus4",
           "text": ""
         },
         {
           "title": "Tourismus",
-          "pictures": "",
+          "picture": "",
           "text": ""
         }
       ]
@@ -161,7 +161,7 @@
       "wiki": [
         {
           "title": "Kapelle S1",
-          "pictures": "haus5",
+          "picture": "haus5",
           "text": ""
         }
       ]
