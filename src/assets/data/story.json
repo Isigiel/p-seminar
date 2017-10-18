@@ -1,166 +1,179 @@
 {
-  "start":[0],
-  "nodes":[
+  "start": [
+    0
+  ],
+  "nodes": [
     {
-      "id":1,
+      "id": 1,
       "title": "Fund der Leiche",
       "gps": {
         "lat": 47.66631,
         "long": 11.28692
       },
-      "unlocks":[1],
-      "wiki":[]
+      "unlocks": [
+        1
+      ],
+      "wiki": []
     },
     {
-      "id":2,
+      "id": 2,
       "title": "Sepps Wohnung",
       "gps": {
         "lat": 4766555,
         "long": 11.28459
       },
-      "unlocks":[2],
-      "wiki":[
+      "unlocks": [
+        2
+      ],
+      "wiki": [
         {
           "title": "Müller-Hof",
-          "picture":"",
-          "text":""
+          "picture": "haus1",
+          "text": ""
         },
         {
-          "title":"Wohnen um 1900",
-          "picture":"",
-          "text":""
-
+          "title": "Wohnen um 1900",
+          "picture": "",
+          "text": ""
         }
-
       ]
     },
     {
-      "id":3,
+      "id": 3,
       "title": "Annas Wohnung",
       "gps": {
         "lat": 47.66409,
         "long": 11.28827
       },
-      "unlocks":[3,4],
+      "unlocks": [
+        3,
+        4
+      ],
       "talk": 1,
-      "wiki":[
+      "wiki": [
         {
           "title": "Fischerweber",
-          "picture":"",
-          "text":"Landkreis: Miesbach Gemeinde: Rottach-Egern Erbauungsjahr: 1729 Gebäudeart: Bauernhof Erbaut: 1729, Anbau Stüber, Vorbau und Verbreiterung 1789 Präsentationszeiten: 1930er Jahre; 1960er Jahre Wirtschaftliche Grundlagen: breitgefächerte Einkommensquellen, bestehend aus Landwirtschaft, Weberei, Schnapsbrennerei, seit Ende des 19.Jh. auch Zimmervermietung an 'Sommerfrischler' Die originale Innenausstattung ist nahezu vollständig erhalten. Seit den 1880er Jahren fanden Umbauten und Modernisierungen im Zusammenhang mit dem Fremdenverkehr statt. 1911 erfolgte der Ausbau zum Feriendomizil."
+          "picture": "haus2",
+          "text": "Landkreis: Miesbach Gemeinde: Rottach-Egern Erbauungsjahr: 1729 Gebäudeart: Bauernhof Erbaut: 1729, Anbau Stüber, Vorbau und Verbreiterung 1789 Präsentationszeiten: 1930er Jahre; 1960er Jahre Wirtschaftliche Grundlagen: breitgefächerte Einkommensquellen, bestehend aus Landwirtschaft, Weberei, Schnapsbrennerei, seit Ende des 19.Jh. auch Zimmervermietung an 'Sommerfrischler' Die originale Innenausstattung ist nahezu vollständig erhalten. Seit den 1880er Jahren fanden Umbauten und Modernisierungen im Zusammenhang mit dem Fremdenverkehr statt. 1911 erfolgte der Ausbau zum Feriendomizil."
         },
         {
-          "title":"Tourismus",
-          "picture":"",
-          "text":""
+          "title": "Tourismus",
+          "picture": "",
+          "text": ""
         },
         {
-          "title":"Schnapsbrennen",
-          "picture":"",
-          "text":""
+          "title": "Schnapsbrennen",
+          "picture": "",
+          "text": ""
         }
       ]
     },
     {
-      "id":4,
-      "title":"Sennerin Evi",
+      "id": 4,
+      "title": "Sennerin Evi",
       "gps": {
         "lat": 47.66356,
         "long": 11.28817
       },
-      "unlocks":[5],
+      "unlocks": [
+        5
+      ],
       "talk": 2,
-      "wiki":[
+      "wiki": [
         {
-          "title":"Alm A5",
-          "picture":"",
-          "text":"Landkreis: Traunstein Gemeinde: Schleching Erbauungsjahr: 1824 Gebäudeart: Alm Präsentationszeit: um 1970 Der Kaser gehörte zum Weberbauerhof in Schleching. In einem Versteck im Weberbauerkaser wurde Wilderermunition gefunden. Thema: 'Wildschützen' - Wilderei in den Bergen."
+          "title": "Haidenholzalm",
+          "picture": "haus3",
+          "text": "Landkreis: Traunstein Gemeinde: Schleching Erbauungsjahr: 1824 Gebäudeart: Alm Präsentationszeit: um 1970 Der Kaser gehörte zum Weberbauerhof in Schleching. In einem Versteck im Weberbauerkaser wurde Wilderermunition gefunden. Thema: 'Wildschützen' - Wilderei in den Bergen."
         },
         {
-          "title":"Räterepublik",
-          "pictures":"",
-          "text":""
+          "title": "Räterepublik",
+          "pictures": "",
+          "text": ""
         },
         {
-          "title":"Freikorps Werdenfels",
-          "pictures":"",
-          "text":""
+          "title": "Freikorps Werdenfels",
+          "pictures": "",
+          "text": ""
         },
         {
-          "title":"Almwirtschaft",
-          "pictures":"",
-          "text":""
+          "title": "Almwirtschaft",
+          "pictures": "wiki1",
+          "text": ""
         }
       ]
     },
     {
-      "id":6,
-      "title":"Annas Vater Hiasl",
+      "id": 6,
+      "title": "Annas Vater Hiasl",
       "gps": {
-        "lat": 47.66603,
-        "long": 11.28676
+        "lat": 47.66409,
+        "long": 11.28827
       },
-      "unlocks":[7],
+      "unlocks": [
+        7
+      ],
       "talk": 3,
-      "wiki":[]
+      "wiki": []
     },
     {
-      "id":7,
-      "title":"Evis Vater Alois",
+      "id": 7,
+      "title": "Evis Vater Alois",
       "gps": {
         "lat": 47.66469,
         "long": 11.28705
       },
-      "unlocks":[6],
+      "unlocks": [
+        6
+      ],
       "talk": 0,
-      "wiki":[
+      "wiki": [
         {
-          "title":"Zollingerhalle T11",
-          "pictures":"",
-          "text":""
+          "title": "Zollingerhalle T11",
+          "pictures": "haus4",
+          "text": ""
         },
         {
-          "title":"Tourismus",
-          "pictures":"",
-          "text":""
+          "title": "Tourismus",
+          "pictures": "",
+          "text": ""
         }
       ]
     },
     {
-      "id":8,
-      "title":"Johannes",
+      "id": 8,
+      "title": "Johannes",
       "gps": {
         "lat": 40.749222,
         "long": -74.003812
       },
-      "unlocks":[],
-      "wiki":[]
+      "unlocks": [],
+      "wiki": []
     },
     {
-      "id":9,
-      "title":"Pfarrer Krottenkopf",
+      "id": 9,
+      "title": "Pfarrer Krottenkopf",
       "gps": {
-        "lat": 40.749222,
-        "long": -74.003812
+        "lat": 47.66603,
+        "long": 11.28676
       },
-      "unlocks":[],
+      "unlocks": [],
       "talk": 4,
-      "wiki":[
+      "wiki": [
         {
-          "title":"Kapelle S1",
-          "pictures":"",
-          "text":""
+          "title": "Kapelle S1",
+          "pictures": "haus5",
+          "text": ""
         }
       ]
     }
   ],
-  "talks":[
+  "talks": [
     {
       "title": "Befragung von Alois",
-      "start":[
+      "start": [
         "Hallo, ich bin Alois."
       ],
-      "questions":[
+      "questions": [
         {
           "text": "Kamen Sie mit Sepp gut zurecht oder eher nicht?",
           "answers": [
@@ -183,7 +196,7 @@
         },
         {
           "text": "Sepp hatte offenbar ein Verhältnis zu ihrer Tochter. Was halten sie davon?",
-          "answers":[
+          "answers": [
             "Meine Tochter ist alt genug.",
             "Sie kann selbst entscheiden was oder wen sie will.",
             "Wenn es nach mir ginge hätte ich nicht gerade einen „Weißen“ als Liebhaber gewählt.",
@@ -198,10 +211,10 @@
     },
     {
       "title": "Befragung von Anna",
-      "start":[
+      "start": [
         "Hallo, ich bin Anna"
       ],
-      "questions":[
+      "questions": [
         {
           "text": "Ich habe gehört sie führten eine Beziehung mit dem Verstorbenen, wie lange waren sie mit ihm zusammen?",
           "answers": [
@@ -212,7 +225,7 @@
         },
         {
           "text": "Wie ich sehe sind Sie schwanger, wäre der Verstorbene der Vater gewesen?",
-          "answers":[
+          "answers": [
             "Ja natürlich! Was denken sie denn?! Ich habe ihn niemals betrogen!"
           ],
           "correct": false
@@ -230,10 +243,10 @@
     },
     {
       "title": "Befragung von Evi",
-      "start":[
+      "start": [
         "Hallo, ich bin Evi die Sennerin"
       ],
-      "questions":[
+      "questions": [
         {
           "text": "Wie ich erfahren habe, hatten sie eine Affäre mit Sepp??",
           "answers": [
@@ -269,10 +282,10 @@
     },
     {
       "title": "Befragung von Matthias",
-      "start":[
+      "start": [
         "Hallo, ich bin Matthias"
       ],
-      "questions":[
+      "questions": [
         {
           "text": "Wie war Ihr Verhältnis zum Verstorbenen?",
           "answers": [
@@ -294,8 +307,8 @@
           "correct": true
         },
         {
-          "text":"Wo waren Sie am Abend des Mordes und was haben Sie getan?",
-          "answers":[
+          "text": "Wo waren Sie am Abend des Mordes und was haben Sie getan?",
+          "answers": [
             "Sie wollen damit doch wohl nicht etwa andeuten, dass ich der Mörder von diesem Taugenichts sein soll?!"
           ],
           "correct": false
@@ -303,11 +316,11 @@
       ]
     },
     {
-      "title":"Befragung Pfarrer Krottenkopf",
-      "start":[
+      "title": "Befragung Pfarrer Krottenkopf",
+      "start": [
         "Hallo, ich bin Pfarrer Krottenkopf."
       ],
-      "questions":[
+      "questions": [
         {
           "text": "Wie ich erfahren habe, hatten Sie einige Probleme mit Sepp??",
           "answers": [
